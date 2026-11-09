@@ -1,0 +1,16 @@
+{
+ "source": {
+  "kind": "file",
+  "ref": "assets/img/artemis-remoundou-psychologos-icon.svg"
+ },
+ "source_md5": "7695b736f45346c10b81df16e8f78118",
+ "version": "06481b36",
+ "tile": null,
+ "crop": null,
+ "header": [
+  "inline",
+  "index.html",
+  "0f5c7869296ca45d4f109aa9eec4b40c"
+ ],
+ "made": "2026-11-09"
+}
