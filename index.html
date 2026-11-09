@@ -88,7 +88,7 @@ em{font-style:italic;color:var(--goldt)}
 /* ---------- header ---------- */
 .prog{position:fixed;left:0;top:0;height:2px;width:100%;z-index:120;background:linear-gradient(90deg,var(--gold),var(--goldl));transform-origin:left;transform:scaleX(0)}
 .hd{position:fixed;inset:0 0 auto;z-index:100;transition:transform .4s var(--ease)}
-.hd::before{content:"";position:absolute;inset:0;background:rgba(247,242,234,.86);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);box-shadow:0 1px 0 var(--line);opacity:0;transition:opacity .4s}
+.hd::before{content:"";position:absolute;inset:0;background:rgba(247,242,234,.95);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);box-shadow:0 1px 0 var(--line);opacity:0;transition:opacity .4s}
 .hd.solid::before,.hd.menu::before{opacity:1}
 .hd-in{position:relative;display:flex;align-items:center;gap:22px;height:82px;transition:height .35s var(--ease)}
 .hd.solid .hd-in{height:70px}
@@ -150,7 +150,7 @@ em{font-style:italic;color:var(--goldt)}
 .h-ph{position:relative;margin:0;aspect-ratio:1;width:100%;max-width:620px;justify-self:end}
 .moon{position:absolute;left:10%;top:10%;width:80%;aspect-ratio:1;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 60% 34%,#FCF5E7 0%,var(--moon) 52%,#E2C89D 100%);box-shadow:var(--sh3),inset 0 0 0 1px rgba(176,122,54,.18);transform:translate(calc(var(--mx,0)*10px),calc(var(--my,0)*10px));transition:transform .6s var(--ease)}
 .moon::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 -30px 60px -20px rgba(176,122,54,.25);pointer-events:none;z-index:2}
-.moon .hp{position:absolute;inset:6% 2% 0 2%;display:block}
+.moon .hp{position:absolute;inset:3% 0 0 0;display:block;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 15%);mask-image:linear-gradient(to bottom,transparent 0,#000 15%)}
 .moon img{width:100%;height:auto;transform:translateY(6%) scale(1.04);transform-origin:50% 100%;transition:transform 1.6s var(--ease)}
 .hero.go .moon img{transform:translateY(0) scale(1)}
 .moon-sh{position:absolute;inset:-2%;border-radius:50%;z-index:3;background:radial-gradient(circle at 45% 50%,rgba(31,34,51,.55),rgba(31,34,51,.74));transform:translateX(0);transition:transform 1.5s cubic-bezier(.65,0,.35,1) .05s;pointer-events:none}
@@ -268,8 +268,8 @@ em{font-style:italic;color:var(--goldt)}
 .pd path{fill:var(--goldl)}
 .pd.on{opacity:1;transform:scale(1.18)}
 .phs{grid-area:s;list-style:none;margin:30px 0 0;padding:0;display:grid}
-.ph{grid-area:1/1;padding:26px 28px;border-radius:20px;background:rgba(255,255,255,.04);border:1px solid var(--lineL);opacity:0;transform:translateY(22px);transition:opacity .55s var(--ease),transform .7s var(--ease);pointer-events:none}
-.ph.on{opacity:1;transform:none;pointer-events:auto}
+.ph{grid-area:1/1;padding:26px 28px;border-radius:20px;background:rgba(255,255,255,.04);border:1px solid var(--lineL);opacity:0;transform:translateY(-14px);transition:opacity .22s ease,transform .3s ease;pointer-events:none}
+.ph.on{opacity:1;transform:none;pointer-events:auto;transition:opacity .5s var(--ease) .2s,transform .7s var(--ease) .2s}
 .ph-m{display:inline-block;font:600 12px/1 var(--fb);letter-spacing:.18em;text-transform:uppercase;color:var(--goldl);margin-bottom:14px}
 .ph h3{font-size:clamp(26px,2.5vw,34px);color:#fff;margin-bottom:10px}
 .ph p{margin:0;color:rgba(237,230,218,.8)}
